@@ -1,4 +1,5 @@
 import pricelist as p
+import smithing
 
 print('mithril efficiency')
 
@@ -17,3 +18,7 @@ smeltprice = p.mithrilore + p.coal * 4
 print('****' * 8)
 print('price to smelt: ' + str(smeltprice))
 print('profit to smelt: ' + str(p.mithrilbar - smeltprice))
+
+#things to do with bars
+smithing.smithefficiency('mithril', p.mithrilbar)
+

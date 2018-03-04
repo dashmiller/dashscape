@@ -1,24 +1,19 @@
+import pricelist as p
+
 print('mithril efficiency')
 
-#TODO grab prices automatically
-
-#variables
-mithrilbar = 1567
-mithrilore = 403
-coal = 141
-gedate = 'mar 4 2018'
 
 
 #base prices
-print('prices are active as of ' + gedate)
-print('mithril bar price: ' + str(mithrilbar))
-print('mithril ore price: ' + str(mithrilore))
-print('coal price: ' + str(coal))
+print('prices are active as of ' + p.gedate)
+print('mithril bar price: ' + str(p.mithrilbar))
+print('mithril ore price: ' + str(p.mithrilore))
+print('coal price: ' + str(p.coal))
 
 #efficiency of bars
 
 #mithril bar recipe 4 coal, 1 mithril
-smeltprice = mithrilore + coal * 4
+smeltprice = p.mithrilore + p.coal * 4
 print('****' * 8)
 print('price to smelt: ' + str(smeltprice))
-print('profit to smelt: ' + str(mithrilbar - smeltprice))
+print('profit to smelt: ' + str(p.mithrilbar - smeltprice))

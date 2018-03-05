@@ -19,3 +19,5 @@ ringofforging = 2017
 lobster = 92
 swordfish = 213
 tuna = 38
+monkfish = 383
+shark = 1201

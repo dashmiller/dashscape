@@ -8,8 +8,10 @@ print('of course, this does not consider slot efficiency. that is up to you.')
 tunaheal = 750
 lobsterheal = 1200
 sfheal = 1400
+monkheal = 1600
+sharkheal = 2000
 
-foods = ['tuna','lobster','swordfish']
+foods = ['tuna','lobster','swordfish','monkfish','shark']
 
 def getfoodprice(food):
     if food == 'tuna':
@@ -18,6 +20,10 @@ def getfoodprice(food):
         return p.lobster
     elif food == 'swordfish':
         return p.swordfish
+    elif food == 'monkfish':
+        return p.monkfish
+    elif food == 'shark':
+        return p.shark
 
 def getheal(food):
     if food == 'tuna':
@@ -26,6 +32,10 @@ def getheal(food):
         return lobsterheal
     elif food == 'swordfish':
         return sfheal
+    elif food == 'monkfish':
+        return monkheal
+    elif food == 'shark':
+        return sharkheal
 
 tunabaseline = p.tuna / tunaheal
 
